@@ -5,6 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Olivia's Personal Page</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+			integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+			crossorigin=""
+		/>
+		<script
+			src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+			integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+			crossorigin=""
+		></script>
 	</head>
 	<body>
 		<!-- Navbar Section -->
@@ -26,13 +37,18 @@
 						<a href="#about" class="navbar_link" id="about-page">ABOUT</a>
 					</li>
 					<li class="navbar_item">
+						<a href="#projects" class="navbar_link" id="projects-page"
+							>PROJECTS</a
+						>
+					</li>
+					<li class="navbar_item">
 						<a href="#photography" class="navbar_link" id="photography-page"
 							>PHOTOGRAPHY</a
 						>
 					</li>
-					<li class="navbar_item">
+					<!-- <li class="navbar_item">
 						<a href="#arcade" class="navbar_link" id="arcade-page">ARCADE</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</nav>
@@ -43,8 +59,9 @@
 			<div class="main_content">
 				<h1 class="typewriter">Hello! My name is Olivia.</h1>
 				<p>
-					I am a software engineer. I design and develop applications. I enjoy
-					perusing buildings and studying cities' architecture.
+					Welcome to my personal website! I am a software engineer. I design and
+					develop applications. I enjoy perusing buildings and studying cities'
+					architecture.
 				</p>
 				<button class="about_button">
 					<a href="#about"> More about me</a>
@@ -78,11 +95,27 @@
 			</div>
 		</div>
 
-		<!--Travel-->
-		<div id="photography"></div>
+		<!--Projects-->
+		<div id="projects">
+			<h1>Projects</h1>
+			<div class="project_list">
+				<div class="spineify">
+					<h1>Spineify</h1>
+				</div>
+				<div class="beautybots">
+					<h1>BeautyBots</h1>
+				</div>
+			</div>
+		</div>
 
-		<!--Arcade-->
-		<div id="arcade"></div>
+		<!--Travel-->
+		<div id="photography">
+			<h1>iPhone Photography</h1>
+			<div id="map"></div>
+		</div>
+
+		<!--Contact-->
+		<div id="contact"></div>
 
 		<script src="app.js"></script>
 	</body>

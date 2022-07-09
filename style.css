@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+h1 {
+  color: #F1F0FF
+}
+
 .navbar {
   background: #000120;
   height: 80px;
@@ -148,7 +152,8 @@
   text-align: center;
   color: white;
   width: 100%;
-  height: 100%
+  height: 100%;
+  border: #E133C0 2px;
 }
 
 .main_img {
@@ -191,7 +196,7 @@
 }
 
 #about {
-  position: absolute;
+  background-color: #000120;
   width: 100%;
 }
 
@@ -211,14 +216,22 @@
 }
 
 #about .description {
+
   width: 50%;
   flex-grow: 2;
   padding: 50px 50px 50px 0px
 }
 
 #about .description p {
+  color: #0C85ED;
   padding-bottom: 20px;
 }
 
-
+#photography {
+  background: #000120;
+}
+#map {
+  height: 600px;
+  margin: 20px;
+}
 
