@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  background: black;
+  background: #000120;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -140,34 +140,31 @@
 
 /*Home*/
 
-#photography {
-  top: -1000;
-}
-
-#home.active {
+/* #home.active {
   font-family: 50px;
-}
-
-.main_container {
+} */
+#home {
   position: relative;
+  text-align: center;
+  color: white;
   width: 100%;
   height: 100%
 }
 
-#main_img {
-  position: absolute;
+.main_img {
   width: 100%;
   filter: blur(2px);
 }
 
 .main_content {
   position: absolute;
-  text-align: center;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #home .typewriter{
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
@@ -192,4 +189,36 @@
 #home p {
   font-size: 20px;
 }
+
+#about {
+  position: absolute;
+  width: 100%;
+}
+
+#about .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+#about img {
+  flex-grow: 2;
+  width: 30%;
+  padding: 50px 0px 50px 50px
+
+}
+
+#about .description {
+  width: 50%;
+  flex-grow: 2;
+  padding: 50px 50px 50px 0px
+}
+
+#about .description p {
+  padding-bottom: 20px;
+}
+
+
 
