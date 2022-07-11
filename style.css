@@ -12,7 +12,7 @@ h1 {
 }
 
 .nav {
-  height: 80px;
+  height: 70px;
   width: 100%;
   top: 0;
   z-index: 999;
@@ -22,7 +22,7 @@ h1 {
 
 .navbar_container {
   background-color: #000120;
-  height: 80px;
+  height: 70px;
   width: 100%;
   position: fixed;
   z-index: 999;
@@ -32,7 +32,7 @@ h1 {
 }
 
 #navbar_logo img {
-  max-height: 90%;
+  max-height: 95%;
   width: auto;
 }
 
@@ -202,24 +202,29 @@ h1 {
 
 #about .profile {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .about_section {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 60px;
+
 }
 
 #about img {
-  flex-grow: 2;
-  width: 30%;
-  padding: 50px 0px 50px 50px
-
+  width: 25%;
+  padding-bottom: 40px;
 }
 
-#about .description {
-
-  width: 50%;
-  flex-grow: 2;
-  padding: 50px 50px 50px 0px
+#about .about_section .description {
+  display: flex;
+  flex-direction: column;
+  width: 45%
 }
 
 #about .description p {
@@ -230,6 +235,7 @@ h1 {
 #photography {
   background: #000120;
 }
+
 #map {
   height: 600px;
   margin: 20px;
