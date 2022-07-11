@@ -11,24 +11,23 @@ h1 {
   color: #F1F0FF
 }
 
-.navbar {
-  background: #000120;
+.nav {
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
+  width: 100%;
   top: 0;
   z-index: 999;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar_container {
-  display:flex;
+  background-color: #000120;
   height: 80px;
-  z-index: 1;
   width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   padding: 10px 30px;
 }
 
@@ -43,6 +42,7 @@ h1 {
   width: 400px;
   justify-content: space-evenly;
   list-style-type: none;
+  margin: 0;
 }
 
 .navbar_link {
@@ -235,3 +235,9 @@ h1 {
   margin: 20px;
 }
 
+.project_list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 10px;
+}
