@@ -157,8 +157,6 @@ h4 {
   position: relative;
   text-align: center;
   color: white;
-  width: 100%;
-  height: 100%;
 }
 
 .main_img {
@@ -171,15 +169,17 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  justify-content: center;
+  width: 40vw;
 }
 
 #home .typewriter{
-  width: 100%;
   overflow: hidden;
   border-right: .15em solid #0C85ED;
   white-space: nowrap;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 2vw;
+  width: 100%;
   letter-spacing: .15em;
   animation:
     typing 3.5s steps(30, end),
@@ -198,11 +198,13 @@ h4 {
 
 #home p {
   font-size: 20px;
+  font-size: 1.5vw;
 }
 
 #home a {
   text-decoration: none;
   color: white;
+  font-size: 1vw;
 }
 #about {
   background-color: #000120;
@@ -276,7 +278,7 @@ h4 {
   padding: 55px 0px 90px 0px;
 }
 
-#photography {
+#travel {
   background: #000120;
   padding: 70px 20px 20px 20px;
   color: #bebebe;
