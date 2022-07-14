@@ -381,7 +381,8 @@ h4 {
   height: 175px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 15vw;
   align-items: center;
   color:#bebebe;
 }
