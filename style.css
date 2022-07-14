@@ -354,16 +354,16 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20vw;
-  height: 25vw;
+  width: 23vw;
+  height: 28vw;
   background-color: white;
   border-radius: 5px;
   box-shadow: 5px 5px;
 }
 
 .polaroid img {
-  width: 90%;
-  height: 70%;
+  width: 93%;
+  height: 68%;
 }
 
 
