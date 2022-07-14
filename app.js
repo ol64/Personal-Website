@@ -45,7 +45,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	attribution: '© OpenStreetMap',
 }).addTo(map);
 
-var newYorkCity = L.marker([40.6932363, -73.9848]).addTo(map);
+var nYC = L.marker([40.6932363, -73.9848]).addTo(map);
 var amsterdam = L.marker([52.3770361, 4.8986806]).addTo(map);
 var salamanca = L.marker([40.9650389, -5.6643833]).addTo(map);
 var madrid = L.marker([40.4222528, -3.6996306]).addTo(map);
@@ -67,7 +67,7 @@ var washington = L.marker([38.8895944, -77.0153417]).addTo(map);
 // 	.openPopup();
 
 var markers = {
-	newYorkCity: [newYorkCity, 'New York'],
+	nYC: [nYC, 'New York'],
 	amsterdam: [amsterdam, 'Netherlands'],
 	salamanca: [salamanca, 'Spain'],
 	madrid: [madrid, 'Spain'],
