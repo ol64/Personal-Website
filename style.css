@@ -62,6 +62,39 @@ h4 {
   background-color: #000120;
 }
 
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+}
+
+audio {
+  display: none;
+}
+
+#bgm {
+  font-size: 16px;
+  color: #eee;
+  width: 50px;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background: #bebebe;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: .8;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+#bgm.fade:hover {
+  opacity: 0.5;
+}
+
+.fade {
+  opacity: 0.2;
+}
+
 #navbar_logo img {
   max-height: 95%;
   width: auto;
@@ -69,7 +102,8 @@ h4 {
 
 .navbar_menu {
   display:flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2vw;
   align-items: center;
   width: 400px;
   margin: 0;
@@ -220,13 +254,13 @@ h4 {
 }
 
 #home p {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 #home a {
   text-decoration: none;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 /* About */
@@ -295,14 +329,12 @@ h4 {
 
 #projects .card-body {
   background-color: #bebebe;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 
 #projects h5 {
-  font-size: 2.3vw;
+  font-size: 2vw;
 }
-
-
 
 .project_list {
   display: flex;
@@ -373,6 +405,7 @@ h4 {
   padding-top: 15px;
   color: #000120;
   font-style: italic;
+  font-size: 1.7vw;
 }
 
 /* Contact */
