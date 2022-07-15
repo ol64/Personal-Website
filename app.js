@@ -1,7 +1,25 @@
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar_menu');
+//audio
+const button = document.querySelector('#bgm');
+const icon = document.querySelector('#bgm > i');
+const audio = document.querySelector('audio');
+
+button.addEventListener('click', () => {
+	if (audio.paused) {
+		audio.volume = 0.2;
+		audio.play();
+		icon.classList.remove('fa-volume-up');
+		icon.classList.add('fa-volume-mute');
+	} else {
+		audio.pause();
+		icon.classList.remove('fa-volume-mute');
+		icon.classList.add('fa-volume-up');
+	}
+	button.classList.add('fade');
+});
 
 //display mobile menu
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar_menu');
 const mobileMenu = () => {
 	menu.classList.toggle('is-active');
 	menuLinks.classList.toggle('active');
