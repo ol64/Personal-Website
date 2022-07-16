@@ -257,10 +257,15 @@ audio {
   font-size: 1.5vw;
 }
 
+#home button {
+  padding: 0 .5vw;
+}
+
 #home a {
   text-decoration: none;
   color: white;
   font-size: 1.2vw;
+  text-align: center;
 }
 
 /* About */
@@ -384,11 +389,10 @@ audio {
 }
 
 #map {
-  height: 600px;
+  height: 60vh;
   width: 60%;
   z-index: 1;
 }
-
 
 .gallery {
   display: flex;
