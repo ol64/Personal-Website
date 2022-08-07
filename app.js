@@ -39,23 +39,6 @@ const hideMenu = (evt) => {
 
 document.addEventListener('click', hideMenu);
 
-// //toggle page from navbar
-// const toggleActivePage = (evt) => {
-// 	let allPages = document.querySelectorAll('.navbar_link');
-//   let id = evt.target.href;
-//   let
-// 	console.log(allPages);
-// 	[...allPages].map((page) => {
-// 		if (page !== evt.target) page.classList.remove('active');
-// 		else {
-// 			evt.target.classList.add('active');
-// 		}
-// 	});
-// 	console.log(allPages);
-// };
-
-// menuLinks.addEventListener('click', toggleActivePage);
-
 //Map
 var map = L.map('map').setView([40.6932363, -73.9848], 3);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -80,10 +63,7 @@ var firenze = L.marker([43.7632139, 11.2638194]).addTo(map);
 var bilbao = L.marker([43.2691, -2.9346417]).addTo(map);
 var washington = L.marker([38.8895944, -77.0153417]).addTo(map);
 
-// home
-// 	.bindPopup("<img src='destinations/nyc.jpeg' style='width: auto'/>NYC, NY")
-// 	.openPopup();
-
+// markers on map
 var markers = {
 	nYC: [nYC, 'New York'],
 	amsterdam: [amsterdam, 'Netherlands'],
